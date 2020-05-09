@@ -1,0 +1,48 @@
+{
+  "name": "react-workshop-spotify-client",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:5678",
+  "scripts": {
+    "start": "concurrently -p \"[{name}]\" -n \"CLIENT,SERVER\" -c \"bgBlue.bold,bgMagenta.bold,bgGreen.bold\" \"yarn run start:client\" \"yarn run start:server\"",
+    "start:client": "react-scripts start",
+    "start:server": "nodemon server/index.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "nc": "new-component"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "dependencies": {
+    "date-fns": "^1.30.1",
+    "focus-visible": "^4.1.5",
+    "immer": "^6.0.2",
+    "isomorphic-fetch": "^2.2.1",
+    "new-component": "^1.0.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-loader-spinner": "^3.1.5",
+    "react-play-button": "0.2.2",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "2.1.8",
+    "react-spring": "^9.0.0-beta.6",
+    "redux": "^4.0.5",
+    "styled-components": "^4.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/register": "^7.8.6",
+    "concurrently": "^5.1.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2"
+  }
+}
