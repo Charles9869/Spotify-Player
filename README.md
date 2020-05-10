@@ -9,9 +9,9 @@ Spotify player is an application that uses the Spotify API and shows information
 - Spotify API
 
 ## RUN LOCALLY
-
-clone using https://github.com/Charles9869/Spotify-Player.git
-
+```
+git clone https://github.com/Charles9869/Spotify-Player.git
+```
 ## SCREENSHOTS
 
 ### Main page
